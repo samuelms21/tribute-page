@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.white-text {
+  color: white;
+}
+
+#banner {
+  background-image: url("/assets/images/bg_michio_kaku.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#banner-text {
+  position: relative;
+  top: 35%;
+  left: 10%;
+  width: 40%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#title {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0 10px 5px 10px;
+}
+
+#sub-title {
+  font-weight: 300;
+  padding: 0 10px 10px 10px;
+}
+
+#read-more-btn {
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#read-more-btn:hover,
+#read-more-btn:active {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+article {
+  background-color: rgba(3, 1, 2, 255);
+  padding: 5% 10%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#img-div {
+  padding: 20px;
+  width: 440px;
+}
+
+#image {
+  padding-top: 10px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+#img-caption {
+  padding: 10px 40px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+}
+
+#tribute-info {
+  padding: 30px 60px;
+}
+
+#tribute-info h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#tribute-info p,
+#tribute-info li {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+#tribute-info li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#quotes {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid white;
+  display: block;
+  margin: 30px auto 10px auto;
+  width: 50%;
+  padding: 2rem;
+  font-weight: 300;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.98);
+  padding: 20px 30px;
+}
+
+footer p {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 992px) {
+  #banner {
+    background-color: black;
+    background-image: none;
+    height: 100vh;
+  }
+
+  #banner-text {
+    top: 30%;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #title,
+  #tribute-info h2 {
+    font-size: 30px;
+  }
+
+  #read-more-btn,
+  #sub-title {
+    font-size: 16px;
+  }
+
+  article {
+    padding: 10px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  #img-div {
+    width: 80%;
+    padding: 5px;
+  }
+
+  #image {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  #img-caption {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  #tribute-info {
+    padding: 20px 30px;
+  }
+
+  #tribute-info p,
+  #tribute-info li {
+    font-size: 14px;
+  }
+
+  #quotes {
+    width: 85%;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #source-link {
+    padding: 0 30px;
+  }
+}
