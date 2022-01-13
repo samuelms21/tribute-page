@@ -29,6 +29,7 @@ a {
 
 #banner {
   background-image: url("/assets/images/bg_michio_kaku.jpg");
+  background-color: black;
   background-size: cover;
   background-position: center;
   height: 100vh;
